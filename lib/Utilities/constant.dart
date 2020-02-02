@@ -1,0 +1,10 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+
+final _firestore = Firestore.instance;
+final storageRef = FirebaseStorage.instance.ref();
+final usersRef = _firestore.collection('users');
+final postRef = _firestore.collection('posts');
+final followingRef = _firestore.collection('following');
+final followersRef = _firestore.collection('followers');
+final feedsRef = _firestore.collection('feeds');
